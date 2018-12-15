@@ -1,0 +1,13 @@
+Fonts
+<link href="https://fonts.googleapis.com/css?family=Krub|Quicksand" rel="stylesheet">
+font-family: 'Krub', sans-serif;
+font-family: 'Quicksand', sans-serif;
+
+
+Montserrat
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+font-family: 'Montserrat', sans-serif;
+
+
+<link href="https://fonts.googleapis.com/css?family=Yantramanav:100" rel="stylesheet">
+font-family: 'Yantramanav', sans-serif;

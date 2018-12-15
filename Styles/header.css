@@ -1,0 +1,22 @@
+/*Header config - color and no border; color border default is black*/
+#header{
+  background-color: #31B3C7;
+  border-width: 0;
+}
+/*Text color of text header menu*/
+#header a{
+  color: white
+}
+/*onmouse */
+#header a:hover{
+  color: white;
+  background-color: #2090A1;
+}
+/*If clicks, item keeps active*/
+#header a:focus{
+  background-color: #249BAD
+}
+/*Text color of text header menu*/
+#header ul li a{
+  color: white
+}
