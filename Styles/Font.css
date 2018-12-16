@@ -68,3 +68,9 @@ html {
   right: 16px;
   font-family: 'Yantramanav', sans-serif;
 }
+
+#information{
+  height: auto;
+  background-color: #07B4F5; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right,#07B4F5,#356679);
+}
