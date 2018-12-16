@@ -5,8 +5,8 @@
   margin: auto;
   position: sticky;
   z-index: 1;
-  width: 100%;
-  display: block;
+  width: 100%;/*
+  display: block;*/
   transition: top 0.3s;
   top: 0px;
 }
