@@ -1,7 +1,18 @@
 html {
   scroll-behavior: smooth;
 }
+
 #image_font{
+  position:relative;
+  z-index:-1;
+  height:auto;
+  width:100%;
+  margin:-5% 0%;
+  opacity: 0.9;
+  filter: grayscale(0%);
+}
+
+#image_info{
   position:relative;
   z-index:-1;
   height:auto;
@@ -9,7 +20,9 @@ html {
   margin:0% 0%;
   opacity: 0.9;
   filter: grayscale(0%);
+  filter: brightness(30%);
 }
+
 #content_font{
   height:auto;
   width:100%;
