@@ -3,6 +3,12 @@
   background-color: #31B3C7;
   border-width: 0;
   margin: auto;
+  position: sticky;
+  z-index: 1;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  top: -100px;
 }
 /*Text color of text header menu*/
 #header a{

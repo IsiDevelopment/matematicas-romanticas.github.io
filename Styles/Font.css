@@ -1,4 +1,6 @@
-﻿
+html {
+  scroll-behavior: smooth;
+}
 #image_font{
   position:relative;
   z-index:-1;
