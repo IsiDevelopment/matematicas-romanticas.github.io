@@ -2,6 +2,7 @@
 #header{
   background-color: #31B3C7;
   border-width: 0;
+  margin: auto;
 }
 /*Text color of text header menu*/
 #header a{
