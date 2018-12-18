@@ -82,3 +82,24 @@ html {
   right: 16px;
   font-family: 'Yantramanav', sans-serif;
 }
+/*
+* {
+  box-sizing: border-box;
+}*/
+
+.column {
+  float: left;
+  max-width: 50%;
+}
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 10%) {
+  .column {
+    width: 90%;
+  }
+}
