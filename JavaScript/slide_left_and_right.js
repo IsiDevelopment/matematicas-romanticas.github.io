@@ -16,7 +16,7 @@ $(window).scroll(function(){
 })
 }
 $(document).scroll(function() {
-  if ( $(document).scrollTop() > 350) {
+  if ( $(document).scrollTop() > 300) {
   	right_slide()
   } else {
   	left_slide()
