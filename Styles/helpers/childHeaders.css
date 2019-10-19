@@ -1,0 +1,41 @@
+.headerFont{
+  background: #051965;
+  color: white;
+  padding: 10px;
+}
+.headerFontBlack{
+  background: #2C3034;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+.headerFontBlack2{
+  background: #696B6D;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+.sizeHeader{
+  width: 95%;
+}
+
+.borderRBL{
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-radius: 0 0 5px 5px;
+}
+.noDisplay{
+  display: none;
+}
+.yesDisplay{
+  display: block;
+}
+.displaySlowly{
+  display: block;
+  visibility: visible;/*
+  opacity: 0;*/
+  transition: visibility 5s, opacity 5s ease;
+}

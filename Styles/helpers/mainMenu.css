@@ -1,0 +1,88 @@
+.overlayMenu {
+  width: 0%;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  background: #EFEFEF;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 6px;
+}
+
+.overlayContentMenu {
+  position: relative;
+  top: 5%;
+  width: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlayMenu a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.closebtn{
+  font-size: 28px !important;
+}
+
+.overlayMenu a:hover, .overlayMenu a:focus {
+  color: #black;
+}
+
+.mainMenu{
+  padding: 10px;
+  border-radius: 40px;
+  border: none;
+  background: white;
+  -webkit-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.mainMenu:hover{
+  background: #F4F4F4;
+}
+
+.overlayMenu .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+.navButClose{
+  width: 0%;
+}
+.navButOpen{
+  width: 20%;
+  right: 5px;
+}
+.mainMenuContent{
+  padding: 10px;
+}
+.mainMenuContent:hover{
+  background: white;
+  color: black;
+}
+.containerMenu{
+  padding: 5px;
+  width: 100%;
+}
+@media screen and (max-width: 950px) {
+  .overlayMenu a {font-size: 20px}
+  .overlayMenu .closebtn {
+  font-size: 40px;
+  top: 0px;
+  right: 35px;
+  }
+  .navButOpen{
+    width: 100%
+  }
+  .containerMenu{
+    float: right;
+    padding: 0px;
+  }
+}

@@ -1,29 +1,33 @@
 /*Header config - color and no border; color border default is black*/
-#header{
-  background-color: #31B3C7;
+.headerMain{
+  background: transparent;
   border-width: 0;
-  margin: auto;
-  position: sticky;
+  position: fixed;
   z-index: 1;
-  width: 100%;/*
-  display: block;*/
   transition: top 0.3s;
-  top: 0px;
+  width: 100%;
 }
-/*Text color of text header menu*/
-#header a{
-  color: white
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
-/*onmouse */
-#header a:hover{
-  color: white;
-  background-color: #2090A1;
+
+.active_title{
+  background: black;
+  border-radius: 50px;
 }
-/*If clicks, item keeps active*/
-#header a:focus{
-  background-color: #249BAD
+.navbar-brand{
+  height: auto;
+  padding: 10px !important;
 }
-/*Text color of text header menu*/
-#header ul li a{
-  color: white
+.dropdown-toggle{
+  color: white !important;
+  text-align: center !important;
+}
+.dropdown-menu{
+  background: transparent;
+}
+@media screen and (min-width: 800px) {
+  #headers{
+    height: 66px;
+  }
 }

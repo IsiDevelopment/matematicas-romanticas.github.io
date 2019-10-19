@@ -1,0 +1,136 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+  /*font-family: "Segoe UI", sans-serif;*/
+  /*font-family: "Museo Sans Rounded", sans-serif;*/
+  /*font-family: 'Noto Sans TC', sans-serif;*/
+  font-family: 'Varela Round', sans-serif;
+  /*font-family: sans-serif,sans-serif;*/
+  background: #EBEBEB;
+}
+.tableSales{
+  width: 100%;
+}
+.tableSaleContainer{
+  font-size: 11px;
+  width: 100%;
+}
+.dataTables_length{
+  display: none;
+}
+.dataTables_filter{
+ display: none !important;
+}
+.tableTitle{
+ text-align: center;
+ background: #747474;
+ color: white;
+}
+ table.dataTable thead th, table.dataTable thead td{
+   padding: 4px 5px 4px 4px;
+   border-bottom: none;
+   border-top: none;
+ }
+ tr td:first-child{
+   border-right: 1px solid gray
+ }
+ table thead{
+   background: #F0F0F0;
+ }
+.checkBoxTable{
+  content: url(../images/checkbox-blank.png);
+}
+.selected .checkBoxTable{
+  content: url(../images/checkbox-marked.png);
+}
+.imageShowDiv{
+  content: url(../images/sort_desc.png);
+}
+.instructions{
+  padding: 4px;
+  border: #EAEAEA 2px dashed;
+}
+.combo{
+  padding: 2px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+.inputSearchLocal{
+  padding: 5px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.inputStyle{
+  padding: 5px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.inputStyleLittle{
+  padding: 3px 10px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.inputSaleStyle{/*
+  padding: 5px 20px;
+  margin: 8px 0;*/
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/*loader*/
+.loader {
+  text-align: center;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.width10{
+  width: 10%;
+}
+.width90{
+  width: 90%;
+}
+.width100{
+  width: 100%;
+}
+
+.staticDiv{
+
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@media screen and (max-width: 800px) {
+}

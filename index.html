@@ -1,265 +1,167 @@
 <!DOCTYPE html>
-
 <html>
 <head >
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  href="libraries/font-awesome.min.css">
   <link rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  href="libraries/bootstrap.min.css">
+  <!--<script
+  src="../libraries/jquery.min.js"></script>-->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+  <script type="text/javascript" src="libraries/jquery-1.12.4.js"></script>
+  <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+  <script type="text/javascript" src="libraries/jquery-ui.js"></script>
+  <script type="text/javascript" src="libraries/jquery.dataTables.min.js"></script>
+  <!--<script type="text/javascript" src="https://cdn.datatables.net/select/1.3.0/js/dataTables.select.min.js"></script>-->
+  <script type="text/javascript" src="libraries/dataTables.select.min.js"></script>
   <script
-  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  src="libraries/bootstrap.min.js"></script>
   <script
-  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <link
-  href="https://fonts.googleapis.com/css?family=Yantramanav:100" rel="stylesheet">
-  <script src="JavaScript/slide_left_and_right.js"></script>
-  <!--<script src="JavaScript/parallax_effect.js"></script>-->
-  <link href="Styles/header.css" rel="stylesheet"/>
-  <link href="Styles/Font.css" rel="stylesheet"/>
-  <link href="Styles/footer.css" rel="stylesheet"/>
-  <link href="Styles/slide_left_and_right.css" rel="stylesheet"/>
-  <title>Curso IPN 2019 | Prepárate | Matemáticas Románticas
+  src="libraries/popper.min.js">
+  </script>
+  <link rel="stylesheet" href="libraries/jquery.dataTables.min.css">
+  <link href="styles/header.css" rel="stylesheet"/>
+  <link href="styles/buttons.css" rel="stylesheet"/>
+  <link href="styles/views.css" rel="stylesheet"/>
+  <link href="styles/columns.css" rel="stylesheet"/>
+  <link href="styles/errors.css" rel="stylesheet"/>
+  <link href="styles/animation_image.css" rel="stylesheet"/>
+  <link href="styles/images.css" rel="stylesheet"/>
+  <link href="styles/helpers/helper.css" rel="stylesheet"/>
+  <link href="styles/helpers/text.css" rel="stylesheet"/>
+  <link href="styles/helpers/mainMenu.css" rel="stylesheet"/>
+  <link href="styles/generalPdv.css" rel="stylesheet"/>
+  <script type="text/javascript" src="javascript/home.js"></script>
+  <script type="text/javascript" src="javascript/controller/isiServicesController.js"></script>
+
+  <title>
+    Tienda en l&iacute;nea
   </title>
-  <meta name="description" content="Matematicas romanticas es un organismo
-  educacional independiente que ofrece cursos de matemáticas para ingresar al
-  IPN (Instituto Politécnico Nacional), con profesores capacitados
-  con más de 5 años de experiencia. Además de ser un curso intensivo con alto
-  nivel de conocimiento de nuestros profesores, el precio de estos es
-  bastante económico, lo cual nos caracteriza como preocuparnos
-  por tu educación. Para nosotros, eres importante" />
-  <meta name="keywords" content="matemáticas, física, ipn, uam, unam, instituto,
-  politécnico, nacional, universidad, autónoma, de, méxico, nacional,
-  metropolitana, azcapotzalco, románticas, prepárate, 2019, curso">
-  <meta name="google-site-verification" content="FdAjXQf_TluM24hiKmxP5jJOsYoq04bswkPcuNzlFgE" />
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+
+      $('#mainMenuBut').on('click', function(){
+        openNav()
+      })
+    });
+    function openNav() {
+      $('#myNavBut').removeClass('navButClose')
+      $('#myNavBut').addClass('navButOpen')
+    }
+    function closeNav() {
+      $('#myNavBut').removeClass('navButOpen')
+      $('#myNavBut').addClass('navButClose')
+    }
+  </script>
 </head>
 
 <body>
-
-  <nav class="navbar navbar-inverse" id="header">
+  <nav class="navbar navbar-inverse headerMain">
     <div class="container-fluid">
       <div class="navbar-header">
+      <div>
+        <a class="navbar-brand ">
+        <span  class="colorWhite">Matem&aacute;ticas Rom&aacute;nticas</span>
+        </a>
+      </div>
         <button type="button" class="navbar-toggle" data-toggle="collapse"
         data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#" style="color: white">
-		Matemáticas Románticas</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="#courses">Cursos</a></li>
-          <li><a href="#information">Qué ofrecemos</a></li>
-          <li><a href="#contact">Conócenos</a></li>
+          <li class="dropdown">
+            <button id="but1Header" onclick="but1Header()">
+              Inicio
+            </button>
+          </li>
+          <li class="dropdown">
+            <button id="but2Header" onclick="but2Header()">
+              Qu&eacute; ofrecemos
+            </button>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle butHeader" data-toggle="dropdown" href="#" id="but3Header">
+              <span class="">Cursos</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><button class="butHeaderSecond" id="butSecond1Header" onclick="butSecond1Header()">UNAM</button></li>
+              <li><button class="butHeaderSecond" id="butSecond2Header" onclick="butSecond2Header()">IPN</button></li>
+              <li><button class="butHeaderSecond" id="butSecond3Header" onclick="butSecond3Header()">UAM</button></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <button id="but4Header" onclick="but4Header()">
+              Acerca de nosotros
+            </button>
+          </li>
+          <li class="dropdown">
+            <button id="but5Header" onclick="but5Header()">
+              Contacto
+            </button>
+          </li>
+          <li class="dropdown">
+            <button id="but6Header" onclick="but6Header()">
+              Material
+            </button>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav" style="float: right">
+          <li class="dropdown" id="">
+            <button id="but7Header" onclick="but7Header()">
+              iniciar sesi&oacute;n
+            </button>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class='contain' id="home">
-    <img src="Images/16.jpg" class="image">
-    <div class="overlay" id='ik'>
-      <div class="text">
-        <div>
-        <p class="font_30">
-          ¡Asegura tu lugar!
-          <br/>
-        </p>
-        <p class="font_30" style="margin: 0 10%">
-        Curso IPN 2019
-        </p>
-        <br/><br/>
-        <p class="font_40" style="float: right">
-          $2,500.00 MXN
-        </p>
-        <br/>
-        <p class="font_20">
-          Cupo limitado<br><br>
-          <button class="buttons button2"
-          onClick="window.open('https://www.facebook.com/matematicasromanticas/');">
-              Informes aqu&iacute;
-          </button>
-        </p>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
 
+  <div id="divPage"></div>
+  <div class="modal fade" id="generalModal" role="dialog" data-backdrop="static" data-keyboard="false" width="100%">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title color_error" id="titleModal">
+          </h4>
+        </div>
+        <div class="modal-body" id="bodyModal">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" id="closeModalBut">Cerrar</button>
         </div>
       </div>
     </div>
   </div>
-  <!--<div style="position: relative" id="home">
-    <img src="Images/11.jpg" id="image_font"/>
-    <div id="text_top_left">
-      <p style="font-size: 6.5vw; " id="title_font">
-        Colegio de
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        la fórmula general
-      </p>
-      <br>
-      <p style="font-size: 3vw; font-weight: bold" id="title_font">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preparación académica
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        para aprovechar tus
-        capacidades al ¡máximo!
-      </p>
-    </div>
-  </div>-->
-
-  <div style="position: relative" id="courses">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel"
-      data-interval="2000" data-pause>
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-
-      <div class="carousel-inner">
-
-        <div class="item active">
-          <img src="Images/12.jpg" alt="Los Angeles" width="100%">
-          <div class="carousel-caption">
-            <h3 style="font-size: 5vw; font-weight: bold">Curso IPN 2019</h3>
-            <p style="font-size: 3vw; font-weight: bold">Para ingresar al
-              Instituto Politécnico Nacional Nivel Superior</p>
-            Inicia 05 de enero, 2019
-          </div>
+  <div class="modal fade" id="loaderModal" role="dialog" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
         </div>
-
-        <div class="item">
-          <img src="Images/13.jpg" alt="Chicago" width="100%">
-          <div class="carousel-caption">
-            <h3 style="font-size: 5vw; font-weight: bold">Curso IPN 2019</h3>
-            <p style="font-size: 3vw; font-weight: bold">Para ingresar al
-              Instituto Politécnico Nacional Nivel Superior</p>
-            Inicia 05 de enero, 2019
-          </div>
+        <div class="modal-body" id="bodyModal" style="left: 35%">
+          <div class=" loader"></div>
         </div>
-
-        <div class="item">
-          <img src="Images/14.jpg" alt="New York" width="100%">
-          <div class="carousel-caption">
-            <h3 style="font-size: 5vw; font-weight: bold">Curso IPN 2019</h3>
-            <p style="font-size: 3vw; font-weight: bold">Para ingresar al
-              Instituto Politécnico Nacional Nivel Superior</p>
-            Inicia 05 de enero, 2019
-          </div>
+        <div style="text-align: center">
+          Realizando operaci&oacute;n, por favor espere...</div>
+        <div class="modal-footer">
         </div>
-
       </div>
-
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
   </div>
-
-  <div style="position: relative;" id="information">
-    <img src="Images/pi.jpg" id="image_info"/>
-    <div id="text_top_left">
-      <h3 style="font-size: 5vw;  color: #B9B9B9;" align="center" id="title_font">
-        Qué ofrecemos
-      </h3>
-        <p style="font-size: 2.2vw; padding:0 3vw" align="justify" id="title_font">
-          - Grupos reducidos para brindar una atención personalizada, con duración
-        máxima de 3 horas.
-        </p>
-        <p style="font-size: 2.2vw; padding:0 3vw" align="justify" id="title_font">
-          - Profesores con más de 7 años de experiencia en cursos. Conocemos lo
-        que más se le dificulta al alumno y las formas en que aprende, según sus
-        habilidades.
-        </p>
-        <p style="font-size: 2.2vw; padding:0 3vw" align="justify" id="title_font">
-          - Método de enseñanza. Hacemos que el alumno entienda los temas y sepa
-        interpretarlos en cualquier situación. No sólo hacemos que memoricen.
-        </p>
-        <p style="font-size: 2.2vw; padding:0 3vw" align="justify" id="title_font">
-          - Precio por debajo de la competencia, paga sólo $2,500.00 MXN.
-        Aparta tu lugar con únicamente $500.00 MXN.
-        </p>
-        <p style="font-size: 2.2vw; padding:0 3vw" align="justify" id="title_font">
-          - Puedes realizar tu pago en el siguiente número de cuenta: 1557560125,
-        desde cualquier tienda de autoservicio o banco.
-        Desafortunadamente, en algunos lugares, el enfoque es más por las ganancias,
-        por lo cual, sólo te ofrecen entre 2 o 3 ejercicios por tema sin la mínima
-        garantía de que verdaderamente estás aprendiendo. Vive tu experiencia con
-        nosotros y verás el resultado.
-        </p>
-    </div>
-  </div>
-  <div style="position: relative" id="contact">
-    <h3 style="font-size: 5vw; font-weight: bold; color: #5F5F5F" align="center" id="title_font">
-      Conócenos
-    </h3>
-    <p style="font-size: 2vw; font-weight: bold; color: #5F5F5F" align="center" id="title_font">
-      Estamos ubicados en Calle 28 171, Guadalupe Proletaria, 07670 Ciudad de
-      México, CDMX.
-    </p>
-      <br>
-    <p style="font-size: 3vw; font-weight: bold; color: #5F5F5F" align="center" id="title_font">
-        ¿Te gustaría conocer nuestras instalaciones y recibir atención
-        personalizada? ¡No esperes más! Llama y reserva una cita, donde podrás
-        conocer desde las instalaciones, hasta la dinámica con la que trabajamos.
-      <br>Contáctanos vía <font color="blue">telefónica</font> o
-        <font color="green">WhatsApp</font> al siguiente número: <font color="black">55-69-00-49-62</font>
-      <br>¡Te estamos esperando!
-    </p>
-    <br>
-    <p style="font-size: 2vw; font-weight: bold; color: #5F5F5F" align="center" id="title_font">
-      <a target="_blank"
-      href="https://www.google.com/maps/place/19%C2%B031'13.4%22N+99%C2%B009'26.9%22W/@19.5203859,-99.1596703,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d19.5203859!4d-99.1574816?hl=es">
-        Click aquí para ver el mapa</a>
-    </p>
+  <div id="xmlCnf" style="">
+    <span id="cnfHomeHost"></span>
+    <span id="cnfHomePath"></span>
   </div>
 
-  <br>
-  <footer id="footer_">
-    <table align="center">
-      <tr>
-        <th>Celular: 55-69-00-49-62</th>
-        <th>
-          &nbsp;
-        </th>
-        <th>
-          <div class="icon-bar">
-            <a href="https://www.facebook.com/matematicasromanticas/" class="facebook" target="_blank">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </div>
-        </th>
-        <th>
-          &nbsp;
-        </th>
-        <th>
-          <div class="icon-bar">
-            <a href="https://www.youtube.com/channel/UCSrr_7XbHd_hzj27KLot2NQ" class="youtube" target="_blank">
-              <i class="fa fa-youtube"></i>
-            </a>
-          </div>
-        </th>
-      </tr>
-    </table>
-  </footer>
-
-  <script>
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-      document.getElementById("header").style.top = "0";
-    }
-  </script>
 
 </body>
 </html>

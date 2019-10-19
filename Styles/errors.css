@@ -1,0 +1,13 @@
+.no_display{
+  display: none;
+}
+.yes_display{
+  display: block;
+}
+.msg_error{
+  color: #F73C00;
+  font-size: 12px;
+}
+.color_error{
+  color: #F73C00;
+}
