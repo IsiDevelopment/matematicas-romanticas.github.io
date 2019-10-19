@@ -16,6 +16,22 @@
   float: left;
   width: 5%;
 }
+.column7{
+  float: left;
+  width: 7%;
+}
+.column10{
+  float: left;
+  width: 10%;
+}
+.column14{
+  float: left;
+  width: 15%;
+}
+.column15{
+  float: left;
+  width: 15%;
+}
 .column20{
   float: left;
   width: 20%;
@@ -30,14 +46,21 @@
   padding: 0px;
   height: auto;
 }
+.column22{
+  float: left;
+  width: 22%;
+}
 .column25{
   float: left;
   width: 25%;
 }
+.column28{
+  float: left;
+  width: 28%;
+}
 .column30{
   float: left;
-  margin: 0 0% 0 5%;
-  width: 27%;
+  width: 30%;
   padding: 0px;
   height: auto;
 }

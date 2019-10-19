@@ -1,102 +1,4 @@
-.width80{
-  width: 80%;
-}
-.noneRightBorder tr td:first-child{
-  border-right: none !important;
-}
-.paddingCell tr td{
-  padding: 5px 0 0 5px;
-}
-.rightSide{
-  float: right;
-}
-.rightSidep{
-  margin: 0 0 0 60%;
-}
-.headerRightSection{
-  background: #4A4A49;
-  color: white;
-  padding: 10px 0 10px 0;
-  text-align: center;
-}
-.sizeInput40{
-  width: 40% !important;
-}
-.sizeInput70{
-  width: 70% !important;
-}
-.size70{
-  width: 70% !important;
-}
-.size95{
-  width: 95% !important;
-}
-.size90{
-  width: 90% !important;
-}
-.size40{
-  width: 40% !important;
-  margin-left: 5%;
-}
-.size50{
-  width: 50% !important;
-  margin-left: 5%;
-}
-.margin8and0{
-  margin: 8px 0;
-}
-.headerRadius{
-  border-radius: 5px 5px 0 0;
-}
-.borderRightG{
-  border-right: 1px solid #B5B6B6;
-}
-.borderLeftG{
-  border-left: 1px solid #B5B6B6;
-}
-.borderTopG{
-  border-top: 1px solid #B5B6B6;
-}
-.borderBottomG{
-  border-bottom: 1px solid #B5B6B6;
-}
 
-
-.boxSale{
-  background: white;
-  border-radius: 4px;
-}
-.boxSaleTextFirst{
-  font-size: 25px;
-}
-.boxSaleTitle{
-  font-size: 17px;
-}
-.boxSalePrice{
-  font-size: 16px;
-  color: #999999;
-}
-.boxSaleDetail{
-  font-size: 14px;
-  color: #ABABAB;
-}
-
-.boxSaleTextOff{
-  color: #39B54A;
-  font-size: 18px;
-}
-.borderRounded4{
-  border-radius: 4px;
-}
-.padding5x10{
-  padding: 5px 10px;
-}
-.addedProducts{
-  background: #8A19D3;
-  color: white;
-  border-radius: 80px;
-  padding: 10px;
-}
 .bgWhite{
   background: white;
 }
@@ -108,4 +10,9 @@
 }
 .opacityImage{
   opacity: 0.5;
+}
+.boxOffer{
+  padding: 15px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  background: white;
 }

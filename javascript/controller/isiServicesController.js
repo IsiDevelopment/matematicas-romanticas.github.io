@@ -305,6 +305,11 @@ function displayGeneralModal(contentModal){
   $('#titleModal').html(contentModal.title)
   $('#bodyModal').html(contentModal.body)
 }
+function displayModal(contentModal){
+  $('#' + contentModal.id).modal('show');
+  $('#title').html(contentModal.title)
+  $('#body').html(contentModal.body)
+}
 function displayLoaderModal(){
   $('#loaderModal').modal('show');
 }

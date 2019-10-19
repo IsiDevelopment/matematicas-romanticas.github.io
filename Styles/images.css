@@ -72,6 +72,19 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.imContainer {
+  position: absolute;
+  top: auto;
+  left: 0%;
+  transform: translate(-0%, -0%);
+  width: 100%
+}
+.imText {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(-0%, -0%);
+}
 .imageTextTop {
   position: absolute;
   top: 0%;

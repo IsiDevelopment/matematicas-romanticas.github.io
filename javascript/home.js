@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $('#divPage').load('view/secondLevelHome/homePage.html')
+  $('#modals').load('view/modals/login.html')
   $('#but1Header').addClass('butHeader')
   $('#but1Header').addClass('active')
   $('#but2Header, #but3Header, #but4Header, #but5Header, #but6Header, #but7Header').addClass('butHeader')
@@ -15,7 +16,8 @@ function but2Header(){
   $('#but2Header').addClass('active')
   $('#but1Header, #but3Header, #but4Header, #but5Header, #but6Header, #but7Header').removeClass('active')
   $('#but2Header').addClass('butHeader')
-  $('#divPage').load("view/secondLevelProducts/superalimentos.html");
+  //$('#divPage').load("view/secondLevelProducts/superalimentos.html");
+  window.location.href = 'http://127.0.0.1/matematicas-romanticas.github.io/#offer'
 }
 function but3Header(){
   $('#but3Header').addClass('active')
@@ -42,10 +44,11 @@ function but6Header(){
   $('#divPage').load("view/secondLevelProducts/cafeteria.html");
 }
 function but7Header(){
-  $('#but7Header').addClass('active')
+  /*$('#but7Header').addClass('active')
   $('#but1Header, #but3Header, #but4Header, #but5Header, #but6Header, #but2Header').removeClass('active')
-  $('#but7Header').addClass('butHeader')
-  $('#divPage').load("view/secondLevelUs/us.html");
+  $('#but7Header').addClass('butHeader')*/
+  displayModal({id: 'loginModal', body: 'test', title: 'test'})
+  //$('#divPage').load("view/secondLevelUs/us.html");
 }
 function butSecond1Header(){
   $('#but3Header').addClass('active')
